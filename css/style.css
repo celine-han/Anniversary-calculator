@@ -1,0 +1,105 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+body{
+    color: rgb(48, 48, 48);
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #adc6c3;
+}
+
+#wrap{
+    width: 500px;
+    margin: 20px auto;
+    background-image: url(../images/annivCalc_img_bgi.jpg);
+    background-repeat: no-repeat;
+    background-position: 150px bottom;
+    border: 1px solid #fff;
+    border-radius: 15px;
+}
+
+.container{
+    position: relative;
+    text-align: center;
+}
+
+.container>h2{
+    line-height: 50px;
+}
+
+.container>h2:nth-of-type(2){
+    margin-top: 80px;
+}
+
+.container>p{
+    font-size: 14px;
+}
+
+.container>p:nth-of-type(1){
+    font-size: 17px;
+}
+
+.container>p:nth-of-type(1):before{
+    display: block;
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    margin-left: -30px;
+    width: 60px;
+    height: 50px;
+    background-image: url(../images/heart03.png);
+    background-size: cover;
+    content: '';
+}
+
+.container>input{
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.container>button{
+    margin-left: 3px;
+    color: rgb(41, 41, 41);
+    font-size: 12px;
+    line-height: 18px;
+    background-color: rgb(235, 235, 235);
+    border: none;
+    border-radius: 3px;
+}
+
+.container>p{
+    line-height: 30px;
+}
+
+address{
+    margin-top: 35spx;
+    font-size: 10px;
+    line-height: 80px;
+    text-align: center;
+}
+
+@media screen and (max-width:640px){
+    #wrap{
+        width: 95%;
+        margin: 50px auto;
+    }
+
+    .container{height: 550px;}
+    .text-center{
+        margin-top: 35px;
+        font-size: 35px;
+    }
+    .container>h2{
+        font-size: 25px;
+        line-height: 1.8;
+    }
+
+    .container>p{
+        font-size: 20px;
+        line-height: 2;
+    }
+
+    address{font-size: 15px;}
+
+}
